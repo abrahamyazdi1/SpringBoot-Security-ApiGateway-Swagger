@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/apigateway/apigateway.iml" filepath="$PROJECT_DIR$/apigateway/apigateway.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/combine project.iml" filepath="$PROJECT_DIR$/.idea/combine project.iml" />
+      <module fileurl="file://$PROJECT_DIR$/orderinfo/orderinfo.iml" filepath="$PROJECT_DIR$/orderinfo/orderinfo.iml" />
+      <module fileurl="file://$PROJECT_DIR$/security/security.iml" filepath="$PROJECT_DIR$/security/security.iml" />
+    </modules>
+  </component>
+</project>
