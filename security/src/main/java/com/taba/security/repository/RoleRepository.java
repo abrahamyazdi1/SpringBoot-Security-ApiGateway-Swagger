@@ -1,6 +1,6 @@
 package com.taba.security.repository;
 
-import com.taba.security.model.ERole;
+
 import com.taba.security.model.Role;
 import org.springframework.data.jpa.repository.JpaRepository;
 import org.springframework.stereotype.Repository;

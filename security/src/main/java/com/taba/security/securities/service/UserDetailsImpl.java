@@ -38,17 +38,17 @@ public class UserDetailsImpl implements UserDetails {
     }
 
     public static UserDetailsImpl build(User user) {
-//        List<GrantedAuthority> authorities = new ArrayList<>();
-//        for (Role temp: user.getRoles())
-//        {
-//            for (Scope temp2 :temp.getScopes())
-//            {
-//                authorities.add(new SimpleGrantedAuthority( temp2.getName()));
-//            }
-//        }
-        List<GrantedAuthority> authorities = user.getRoles().stream()
-                .map(role -> new SimpleGrantedAuthority(role.getName()))
-                .collect(Collectors.toList());
+        List<GrantedAuthority> authorities = new ArrayList<>();
+        for (Role temp: user.getRoles())
+        {
+            for (Scope temp2 :temp.getScopes())
+            {
+                authorities.add(new SimpleGrantedAuthority( temp2.getName()));
+            }
+        }
+//        List<GrantedAuthority> authorities = user.getRoles().stream()
+//                .map(role -> new SimpleGrantedAuthority(role.getName()))
+//                .collect(Collectors.toList());
         return new UserDetailsImpl(user.getId(),
                 user.getUsername(),
                 user.getEmail(),
